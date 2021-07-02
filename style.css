@@ -1,9 +1,11 @@
 body {
-  background-color: lightblue;
   background-image: url("./images/bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Varela Round", sans-serif;
+}
+.image-box img {
+  width: 1000px;
 }
 
 h1 {
@@ -12,60 +14,44 @@ h1 {
   font-size: 72px;
 }
 
-.image-box {
+.arrow_nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+  justify-content: space-between;
+  padding: 65px 30px 0px 30px;
+  font-size: 45px;
 }
 
-.image-box img {
-  width: 150px;
+.arrow_nav_1,
+.arrow_nav_2 {
+  padding-top: 80px;
 }
 
-.current-day {
-  font-weight: bold;
-  text-align: center;
-  font-size: 48px;
+.arrow_nav_1:hover,
+.arrow_nav_2:hover {
+  cursor: pointer;
+  font-size: 55px;
+  transition: 0.2s;
 }
 
-.current-day p {
-  margin: 20px 0;
+.dot_nav{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 40px;
 }
 
-.current-month {
-  text-align: center;
-  margin: 50px auto -20px;
-  font-size: 24px;
+li {
+  color: #95a5a6;
 }
 
-.calendar {
-  position: relative;
-  width: 270px;
-  margin: 0 auto;
+li:hover {
+  cursor: pointer;
+  font-size: 42px;
+  color: #7f8c8d;
+  transition: 0.2s;
 }
 
-table {
-  margin: 50px auto 0;
-  text-align: center;
-}
 
-.button {
-  position: absolute;
-  top: 50%;
-  margin-top: -20px;
-  width: 100px;
-  height: 40px;
-  font-size: 20px;
-  line-height: 40px;
-  background: none;
-  border: none;
-}
-
-.button.prev {
-  left: -100px;
-}
-
-.button.next {
-  right: -100px;
+img {
+  width: 300px;
+  height: 300px;
 }
